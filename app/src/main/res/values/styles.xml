@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/cor_statusBarColor</item>
+    </style>
+
+    <!-- Estilo dos botões do jogo -->
+    <style name="BtnGame" parent="@android:style/Widget.Button.Small">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:onClick">btnPosition</item>
+    </style>
+
+    <!-- Estilo do botão Reiniciar -->
+    <style name="BtnReiniciar" parent="@android:style/Widget.Button.Small">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+    </style>
+
+</resources>

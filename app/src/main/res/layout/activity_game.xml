@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icone_jogo_da_velha"
+        app:layout_constraintBottom_toTopOf="@+id/layGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/BtnGame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layGame">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            style="@style/BtnReiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_reiniciar_jogo" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
