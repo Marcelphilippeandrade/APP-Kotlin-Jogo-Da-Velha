@@ -78,6 +78,7 @@ class GameActivity : AppCompatActivity() {
     private fun checkGame(): Boolean{
         if(jogador == 9) {
             tvResult.text = "Empate"
+            tvResult.setTextColor(Color.YELLOW)
             btnRestart.visibility = View.VISIBLE
             return true
         }
