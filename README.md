@@ -2,7 +2,7 @@
 Este aplicativo é um jogo da Velha. Ele foi desenvolvido utilizando a linguagem Kotlin.
 
 # Objetivo:
-Construir um jogo da velha utilizando a liguagem Kotlin.
+Construir um jogo da velha utilizando a linguagem Kotlin.
 
 # Tecnologias utilizadas: 
 * Kotlin;
