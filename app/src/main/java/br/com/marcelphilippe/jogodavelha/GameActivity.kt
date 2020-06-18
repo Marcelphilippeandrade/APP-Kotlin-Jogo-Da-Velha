@@ -38,10 +38,10 @@ class GameActivity : AppCompatActivity() {
 
     private fun marca(btn: Button){
         if(jogador % 2 != 0) {
-            btn.setTextColor(Color.GREEN)
+            btn.setTextColor(Color.BLACK)
             btn.text = "X"
         }else{
-            btn.setTextColor(Color.RED)
+            btn.setTextColor(Color.GREEN)
             btn.text = "O"
         }
 
@@ -109,10 +109,10 @@ class GameActivity : AppCompatActivity() {
 
         if(!fimJogo) {
             if (jogador % 2 != 0) {
-                tvResult.setTextColor(Color.GREEN)
+                tvResult.setTextColor(Color.BLACK)
                 tvResult.text = "Ganhador: X"
             } else {
-                tvResult.setTextColor(Color.RED)
+                tvResult.setTextColor(Color.GREEN)
                 tvResult.text = "Ganhador: O"
             }
             endGame()
